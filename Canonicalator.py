@@ -35,11 +35,3 @@ for row in csv_f:
     final_strip = left_strip[:-19]
 
     print final_strip
-
-
-
-
-
-
-    # print response.content
-    # print "success!!" # temp loop validator
