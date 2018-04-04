@@ -27,6 +27,7 @@ for row in csv_f:
     html = response.text
     soup = BeautifulSoup(html, 'html.parser')
 # using BeautifulSoup module to pick out the important pieces of the returned HTML from the header (pick out the canonical link)
+# the below soup.find method is just returning the first instance that matches; luckily, the first instance is the canonical link
     raw_canonical = str(soup.find(href=re.compile("help.republicwireless.com")))
 
 # using strip methods to remove the html junk from the canonical web address
